@@ -2,6 +2,10 @@
 
 Adversarial security code review skill for [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Reviews code changes (PRs, branches, working changes) against 25+ CWE-mapped security anti-patterns and produces a merge/block recommendation.
 
+## Origin
+
+This skill was inspired by and built on top of [Arcanum-Sec/sec-context](https://github.com/Arcanum-Sec/sec-context) by Jason Haddix / Arcanum Information Security. That project provides a curated, LLM-consumable security reference distilled from 150+ sources (CVE databases, academic papers, security blogs, developer forums, GitHub advisories) documenting the dangerous anti-patterns AI coding assistants consistently reproduce. The sec-context repo proposed using this material in LLM system prompts, RAG pipelines, or dedicated security review agents — this skill is an implementation of that idea, packaging the reference material into a change-focused adversarial multi-agent pipeline for Claude Code.
+
 ## How it works
 
 ```
